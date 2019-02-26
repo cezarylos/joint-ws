@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <title>JointJS</title>
+
+  <link rel="stylesheet" type="text/css" href="../node_modules/jointjs/dist/joint.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/app.css" />
+</head>
+<body>
+<!--asd-->
+<!-- JointJS dependencies: -->
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/lodash/lodash.js"></script>
+<script src="../node_modules/backbone/backbone.js"></script>
+<!-- graphlib and dagre are required by the DirectedGraph layout: -->
+<script src="../node_modules/graphlib/dist/graphlib.core.js"></script>
+<script src="../node_modules/dagre/dist/dagre.core.js"></script>
+
+<!-- JointJS: -->
+<script src="../node_modules/jointjs/dist/joint.js"></script>
+
+<!-- Global Variables -->
+<script src="./app/variables.js"></script>
+
+<!-- Application JointJS module: -->
+<script src="./app/jointjs/services/graph.js"></script>
+<script src="./app/jointjs/services/paper.js"></script>
+<!--<script src="./app/jointjs/shapes/shapes.js"></script>-->
+
+<!-- Application JointJS Mocked Data [Temp]: -->
+<script src="./app/jointjs/shapes/mockedData.js"></script>
+
+<!-- Application App module: -->
+<script src="./app/app.js"></script>
+
+<div id="test" class="app-container">
+  <h1 class="app-container__title">New App</h1>
+  <div id="newPaper" class="app-container__paper"></div>
+</div>
+<script>
+  var mainView = AppModule.AppView('#newPaper');
+</script>
+
+</body>
+</html>

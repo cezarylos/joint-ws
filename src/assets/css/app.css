@@ -1,0 +1,47 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  user-select: none;
+}
+
+
+
+/* ROOT APP */
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container__title {
+  text-align: center;
+}
+
+
+
+/* PAPER */
+.app-container__paper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+
+/* ELEMENTS */
+.joint-element .option-remove-frame:hover,
+.joint-element .btn-footer-add:hover {
+  fill: rgba(0, 0, 0, 0.05);
+}
